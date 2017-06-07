@@ -91,8 +91,8 @@ struct Params {
     int64_t PowTargetTimespan(unsigned nHeight) const
     {
         if (RevisedIxcoin (nHeight))
-            return 24 * 60 * 60;
-        return 14 * 24 * 60 * 60;
+            return 24 * 60 * 60;  //Every Day after block 20055
+        return 14 * 24 * 60 * 60; //Every 14 Days before block 20055
     }
 
     int64_t DifficultyAdjustmentInterval(unsigned nHeight) const
